@@ -1,6 +1,9 @@
-data/**
+data/*
+!data/.gitkeep 
 fig/*.pdf
-tab/**
-literatre/**
+tab/*
+!tab/.gitkeep
+literatre/*
+!literatre/.gitkeep
 *.pdf
 .DS_Store
