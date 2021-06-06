@@ -1,0 +1,77 @@
+\usepackage{CJKutf8} % allow Chinese
+\usepackage[margin = 1in]{geometry}
+\usepackage[doublespacing]{setspace}
+\frenchspacing
+\usepackage{parskip}
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{0pt}
+\usepackage{mathpazo}
+\usepackage{ragged2e}
+%\usepackage{times}
+% Roman numerals
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\usepackage{pdfpages} % insert pdf
+% pdflscape rotates landscape pages when compiling (lscape doesn't)
+% solution to non-rotated headers: https://tex.stackexchange.com/questions/9071/how-to-translate-and-rotate-the-heading-of-landscaped-pages
+\usepackage{pdflscape} 
+% page numbers in header
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[r]{{\scriptsize{\thepage/\pageref*{LastPage}}}}
+\fancyhead[l]{}
+\setlength{\headheight}{15pt}
+\fancyfoot{}
+% figs and tabs
+\usepackage{float}
+\usepackage[labelsep = colon]{caption}
+\usepackage{graphicx}
+\usepackage{threeparttablex}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{authblk}
+% maths and symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{textgreek}
+% x mark
+\usepackage{pifont} 
+\newcommand{\xmark}{\text{\ding{55}}}
+% citation and reference
+\usepackage[
+  authordate, 
+  backend = biber, 
+  noibid, 
+  doi = false, 
+  url = false, 
+  numbermonth = false, 
+  eprint = false, 
+  isbn = false, 
+  compresspages = true,
+  uniquename = false % authors with same family name are cited without first name initials in front
+  ]{biblatex-chicago}
+\usepackage{csquotes}
+\NewBibliographyString{forthcoming}
+\DefineBibliographyStrings{english}{forthcoming = {forthcoming}}
+\NewBibliographyString{inprint}
+\DefineBibliographyStrings{english}{inprint = {inprint}}
+\NewBibliographyString{inprint}
+\DefineBibliographyStrings{english}{inprint = {n.d.}}
+\usepackage[
+  bookmarks = true, 
+  colorlinks = true, 
+  linkcolor = {magenta}, 
+  urlcolor = {blue}, 
+  citecolor = {teal}, 
+  hyperfootnotes = true, 
+  breaklinks = true, 
+  linktocpage = true,
+  pdfpagemode = UseNone % exclude inserted pdf from page counting
+  ]{hyperref}
+% do not change the relative position between biblatex-chicago and hyperref

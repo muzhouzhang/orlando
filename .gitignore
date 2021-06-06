@@ -1,0 +1,6 @@
+data/**
+fig/*.pdf
+tab/**
+literatre/**
+*.pdf
+.DS_Store
