@@ -2,7 +2,7 @@
 Does mass shooting event influence gun control attitude? Previous research conducted by Rogowski and Tucker (2019) suggests that attitude towards gun control remained unchanged following the 2012 Sandy Hook Elementary School shooting. Given this finding's counterintuitive nature and both scholarly and practical significance, we employ a similar research design while using a new exogenous gun violence incident to explore the extent to which this null effect holds. By leveraging the pre- and post-shooting responses for wave 55 of The American Panel Survey, we show that American's gun control attitude did not change after the 2016 Orlando shooting. Our null finding has meaningful implications for the deadlocked gun control issue in the US.
 
 ###### Replication
-The raw data (`data/taps2016.sav`) we use are downloadable at [here](https://wustl.app.box.com/s/w5i73zji378kcsp685n30hebmsfn370r) (as of June 15, 2020). To replicate, working directory and file path have to be customized. 
+The raw data (`data/taps2016.sav`) we use are downloadable at [TAPS Data Archive (Box)](https://wustl.app.box.com/s/w5i73zji378kcsp685n30hebmsfn370r) (as of June 15, 2020). To replicate, working directory and file path have to be customized. 
 ``` r
 R version 4.1.0 (2021-05-18)
 
